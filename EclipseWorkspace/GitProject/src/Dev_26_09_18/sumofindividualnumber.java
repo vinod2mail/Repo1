@@ -8,6 +8,7 @@ public class sumofindividualnumber {
 		int sum=0;
 		while(num!=0)
 		{
+			int number=100;
 			sum=sum+(num%10);
 			num=num/10;
 		}
