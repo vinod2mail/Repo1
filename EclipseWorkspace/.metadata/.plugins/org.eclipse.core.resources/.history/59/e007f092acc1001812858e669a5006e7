@@ -9,7 +9,7 @@ public class printpascalTiang {
 		int number;
 		
 		for(int i=0;i<num;i++)
-		{  
+		{ int numbrer;
 			number=1;
 			System.out.format("%"+(num-i)*2+"s", "");
 			for(int j=0;j<=i;j++)
