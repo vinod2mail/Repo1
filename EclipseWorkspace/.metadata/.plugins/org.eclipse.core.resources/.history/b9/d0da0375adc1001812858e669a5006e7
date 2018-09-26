@@ -5,7 +5,6 @@ public class sumofindividualnumber {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int num=1234;
-		String str="vinod";
 		int sum=0;
 		while(num!=0)
 		{
