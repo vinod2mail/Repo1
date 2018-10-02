@@ -1,0 +1,17 @@
+package Dev01_10_18;
+
+public class findsubstrinofthestring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="vinod kumar str banglore";
+		String s="str";
+		
+		int index=str.indexOf(s);
+		if(index!=-1)
+		{
+			System.out.print("Find at Index"+s);
+		}
+	}
+
+}

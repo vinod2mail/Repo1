@@ -1,0 +1,26 @@
+package Dev01_10_18;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.ListIterator;
+
+public class listIterrators {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ArrayList al=new ArrayList();
+		al.add(Arrays.asList(2,4,6,7,9));
+		
+		ListIterator li=al.listIterator();
+		System.out.println("List with The Next Method");
+		while(li.hasNext())
+		{
+			System.out.println(li.next());
+			System.out.println(li.nextIndex());
+		}
+		
+		System.out.println("List with The Previous Method");
+	}
+
+}

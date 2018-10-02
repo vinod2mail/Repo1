@@ -1,0 +1,15 @@
+package Dev01_10_18;
+
+import java.util.StringJoiner;
+
+public class Stringjoiner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringJoiner join=new StringJoiner(":");
+		join.add("vinod");
+		join.add("ramesh");
+		join.add("rajesh");
+	}
+
+}
