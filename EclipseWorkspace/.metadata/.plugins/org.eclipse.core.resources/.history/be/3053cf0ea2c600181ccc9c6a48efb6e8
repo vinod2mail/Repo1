@@ -1,0 +1,31 @@
+package dEV_02_10_18;
+
+public class swapvowels {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="wel come to my home";
+		String vowels="aeoiu";
+		
+		int low=0;
+		int high=str.length()-1;
+		char ch[]=str.toCharArray();
+		while(low<high)
+		{
+			if(!vowels.contains(String.valueOf(str.charAt(low))))
+			{
+				low++;
+				continue;
+			}
+			
+			if(!vowels.contains(String.valueOf(str.charAt(high))))
+			{
+				high--;
+				continue;
+			}
+			
+			swap(low,high,ch);
+		}
+	}
+
+}

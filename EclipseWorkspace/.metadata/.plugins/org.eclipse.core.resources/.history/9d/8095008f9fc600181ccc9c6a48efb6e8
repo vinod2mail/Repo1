@@ -1,0 +1,30 @@
+package dEV_02_10_18;
+
+
+
+public class towerofhanois {
+
+	public static void perform(int num,char sur,char des,char temp)
+	{
+		if(num==1)
+		{
+			return ;
+		}
+		perform(num, sur, des, temp);
+		getcount(sur,des);
+		perform(num, sur, temp, des);
+		
+	}
+	
+	public static void getcount(char sur,char des)
+	{
+		System.out.println("Moves From:\t"+sur+"to:\t"+des);
+		count++;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		towerofhanois.perform(3, 'A', 'B','C');
+		
+	}
+
+}

@@ -1,0 +1,34 @@
+package dEV_02_10_18;
+
+public class swapnumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int num1=30;
+		int num2=40;
+		System.out.println("Before Swap"+num1+":\t"+num2);
+		num1=num1+num2;
+		num2=num1-num2;
+		num1=num1-num2;
+		System.out.println("After Swap"+num1+":\t"+num2);
+
+		
+		System.out.println("Using Bit wise");
+		System.out.println("Before Swap"+num1+":\t"+num2);
+		num1=num1^num2;
+		num2=num1^num2;
+		num1=num1^num2;
+		System.out.println("After Swap"+num1+":\t"+num2);
+		
+		
+		
+		System.out.println("Using Multipications and divisions");
+		System.out.println("Before Swap"+num1+":\t"+num2);
+		num1=num1*num2;
+		num2=num1/num2;
+		num1=num1/num2;
+		System.out.println("After Swap"+num1+":\t"+num2);
+	}
+
+}

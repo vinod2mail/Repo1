@@ -1,0 +1,13 @@
+package dEV_02_10_18;
+
+public class findsmallest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a[]={13,12,5,7,18,19};
+		
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package dEV_02_10_18;
+
+public class swapvowels {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

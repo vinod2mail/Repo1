@@ -1,0 +1,16 @@
+package dEV_02_10_18;
+
+
+
+public class towerofhanois {
+
+	public static void perform(int num,char sur,char des,char temp)
+	
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		towerofhanois.perform(3, "A", "B","C");
+	}
+
+}

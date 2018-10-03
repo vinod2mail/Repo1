@@ -1,0 +1,32 @@
+package dEV_02_10_18;
+
+
+
+public class towerofhanois {
+  static int count=0;
+	public static void perform(int num,char sur,char des,char temp)
+	{
+		if(num==1)
+		{
+			return ;
+		}
+		perform(num-1, sur, des, temp);
+		getcount(sur,des);
+		perform(num-1, temp, sur, des);
+		
+	}
+	
+	public static void getcount(char sur,char des)
+	{
+		System.out.println("Moves From:\t"+sur+"to:\t"+des);
+		count++;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		towerofhanois.perform(3, 'A', 'B','C');
+		System.out.println("Total Disk are Moves:\t"+count);
+		
+		
+	}
+
+}
