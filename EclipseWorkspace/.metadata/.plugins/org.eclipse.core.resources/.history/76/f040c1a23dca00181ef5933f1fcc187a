@@ -1,0 +1,66 @@
+package Dev_06_08_18;
+
+public class DeadLockprgra {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		
+		final String str1="vinod";
+		final String str2="abc";
+		
+		Thread t1=new Thread()
+		{
+			public void run()
+			{
+				synchronized(str1)
+				{
+					System.out.println("Thread-1 hold resources \t str1");
+					
+					try
+					{
+						Thread.sleep(100);
+					}
+					catch(Exception e)
+					{
+						
+					}
+					
+					synchronized (str2)
+					{
+					System.out.println("Thread-2 hold resources \t str2");	
+					}
+				}
+			}
+		};
+		
+		
+		Thread t2=new Thread()
+		{
+			public void run()
+			{
+				synchronized(str2)
+				{
+					System.out.println("Thread-2 Locked resouces \t str-2");
+				}
+				try
+				{
+					Thread.sleep(5000);
+				}
+				catch(Exception io)
+				{
+					
+				}
+				synchronized(str1)
+				{
+					System.out.println("Thread  -2 Locked resouces \t str-1");
+					
+				}
+			}
+		};
+		t1.start();
+		t2.start();
+
+	}
+
+}

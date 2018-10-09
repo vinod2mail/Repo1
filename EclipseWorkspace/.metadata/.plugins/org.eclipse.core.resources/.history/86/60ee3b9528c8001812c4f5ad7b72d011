@@ -1,0 +1,47 @@
+package Dev_04_10_18;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class permutationofstring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List li=permutationofstring.perform("abc");
+		System.out.println(li);
+		System.out.println(li.size());
+		Iterator it=li.iterator();
+		while(it.hasNext())
+		{
+			System.out.println(it.next());
+		}
+		
+
+	}
+	public static List perform(String str)
+	{
+		List ls=new ArrayList();
+		permutationofstring.getperfor("",str,ls);
+		return ls;
+		
+	}
+	
+	public static void getperfor(String ch ,String input,List ls)
+	{
+		if(input.isEmpty())
+		{
+			ls.add(ch+input);
+		}
+
+for(int i=0;i<input.length();i++)
+{
+	
+
+	getperfor(ch+input.charAt(i),input.substring(0,i)+input.substring(1),ls);
+
+
+	}
+
+}
+}

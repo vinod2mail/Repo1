@@ -1,0 +1,20 @@
+package Dev_04_10_18;
+
+public class findBiggestWord {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="Vinodkumar Biradar From BangloreCity";
+		int maxl=0;
+		int longgest="";
+		String s[]=str.split("");
+		
+		
+		for(int i:s)
+		{
+			
+		}
+
+	}
+
+}
